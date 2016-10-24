@@ -78,3 +78,16 @@ set expandtab
 set tabstop=4
 set shiftwidth=2
 set pastetoggle=<F12>
+
+
+"for powerline good looking
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:minBufExplForceSyntaxEnable=1
+set laststatus=2
+set t_Co=256
+let g:Powerline_symbols="fancy"
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
